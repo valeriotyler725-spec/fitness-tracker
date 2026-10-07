@@ -35,12 +35,16 @@ Items marked **OPEN** need an answer before or during the build.
 WHOOP's public API and bulk data export do **not** include Strength Trainer sets, reps or weights.
 Candidate paths:
 
-1. **Strava relay (preferred if it works):** turn on Strength Trainer sharing in WHOOP so each
-   strength workout posts to Strava with its exercise list and weights. The dashboard
-   reads it from Strava's free API and parses it. **OPEN:** confirm the format from one real activity.
-2. **Screenshot upload:** free in-browser text recognition reads a WHOOP summary screenshot,
-   then you confirm the numbers.
-3. **Quick entry in the dashboard:** a fallback.
+Strava relay ruled out: tested 2026-10-07, and Strava does not receive the set data.
+**OPEN: pick one:**
+
+1. **Screenshot import:** keep logging in WHOOP Strength Trainer. After the session, upload
+   screenshots of the summary. Free in-browser text recognition reads exercise, sets, reps and
+   weight, and you confirm or fix them in one review screen. Needs sample screenshots to build the reader.
+2. **Dashboard logger plus WHOOP activity:** log sets in the dashboard, with today's workout
+   pre-filled and the suggested weight shown. Start a plain "Weightlifting" activity on WHOOP so
+   strain and HR are still captured, and the dashboard matches it by time. No double entry,
+   and this is the long-term path when WHOOP is replaced.
 
 ### Progression rule (from the program, plus equipment awareness)
 
