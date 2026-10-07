@@ -5,79 +5,415 @@
     "phase": "Cycle 1 - Cut",
     "as_of": "2026-10-07",
     "tempo_format": "eccentric-pause-concentric-pause (seconds)",
-    "progression": "Double progression: hit top of rep range on all sets for 2 sessions, then add load (+5 lb compounds, +2.5 lb isolation).",
-    "verify": [
-      "Bull riding prep and core routine sets/reps"
-    ]
+    "progression": "Double progression: hit top of rep range on all sets for 2 sessions, then add load (+5 lb compounds, +2.5 lb isolation)."
   },
   "weekly_schedule": [
-    { "day": "Monday", "am": "Push Hypertrophy", "extra": "Bull Riding Prep", "pm": "Midday walk" },
-    { "day": "Tuesday", "am": "Pull Hypertrophy", "extra": "Core Routine", "pm": "Midday walk" },
-    { "day": "Wednesday", "am": "Legs Hypertrophy", "extra": "Bull Riding Prep", "pm": "Midday walk" },
-    { "day": "Thursday", "am": "Upper Strength", "extra": "Core Routine", "pm": "Midday walk + Zumba (high-calorie day)" },
-    { "day": "Friday", "am": "Lower Strength", "extra": "Bull Riding Prep", "pm": "Midday walk" },
-    { "day": "Saturday", "am": "Walk", "extra": "Core Routine", "pm": "Zumba (high-calorie day)" },
-    { "day": "Sunday", "am": "Mobility & Yoga Flow (25-30 min)", "extra": "Core Routine", "pm": "Outdoor walk" }
+    {
+      "day": "Monday",
+      "am": "Push Hypertrophy",
+      "pm": "Midday walk"
+    },
+    {
+      "day": "Tuesday",
+      "am": "Pull Hypertrophy",
+      "pm": "Midday walk"
+    },
+    {
+      "day": "Wednesday",
+      "am": "Legs Hypertrophy",
+      "pm": "Midday walk"
+    },
+    {
+      "day": "Thursday",
+      "am": "Upper Strength",
+      "pm": "Midday walk + Zumba (high-calorie day)"
+    },
+    {
+      "day": "Friday",
+      "am": "Lower Strength",
+      "pm": "Midday walk"
+    },
+    {
+      "day": "Saturday",
+      "am": "Walk",
+      "pm": "Zumba (high-calorie day)"
+    },
+    {
+      "day": "Sunday",
+      "am": "Mobility & Yoga Flow (25-30 min)",
+      "pm": "Outdoor walk"
+    }
   ],
   "sessions": {
     "Monday - Push Hypertrophy": [
-      { "exercise": "Barbell Bench Press", "sets": 3, "reps": "8-10", "load": "70-75% 1RM", "tempo": "3-1-1-0", "rest": "2.5 min", "superset_with": null, "notes": "Stop if anterior shoulder pain -> DB bench" },
-      { "exercise": "Incline DB Press", "sets": 3, "reps": "10-12", "load": "~65% 1RM", "tempo": "3-1-1-0", "rest": "2 min", "superset_with": null, "notes": "Full stretch at bottom" },
-      { "exercise": "Cable Fly (low to high)", "sets": 3, "reps": "12-15", "load": "Light", "tempo": "2-1-2-0", "rest": "-", "superset_with": "Weighted Chest Dip", "notes": "" },
-      { "exercise": "Weighted Chest Dip", "sets": 3, "reps": "8-12", "load": "BW, add load when 3x12 easy", "tempo": "2-0-1-0", "rest": "90 sec", "superset_with": "Cable Fly (low to high)", "notes": "Stop at parallel" },
-      { "exercise": "Overhead Tricep Extension", "sets": 3, "reps": "10-12", "load": "Moderate", "tempo": "3-1-1-0", "rest": "-", "superset_with": "Cable Pushdown", "notes": "" },
-      { "exercise": "Cable Pushdown", "sets": 3, "reps": "12-15", "load": "Moderate", "tempo": "2-0-1-0", "rest": "75 sec", "superset_with": "Overhead Tricep Extension", "notes": "" },
-      { "exercise": "Lateral Raise", "sets": 3, "reps": "15-20", "load": "Light", "tempo": "2-1-2-0", "rest": "-", "superset_with": "Rear Delt Fly (cable)", "notes": "" },
-      { "exercise": "Rear Delt Fly (cable)", "sets": 3, "reps": "15", "load": "Light", "tempo": "2-1-2-0", "rest": "60 sec", "superset_with": "Lateral Raise", "notes": "" }
+      {
+        "exercise": "Barbell Bench Press",
+        "sets": 3,
+        "reps": "8-10",
+        "load": "70-75% 1RM",
+        "tempo": "3-1-1-0",
+        "rest": "2.5 min",
+        "superset_with": null,
+        "notes": "Stop if anterior shoulder pain -> DB bench"
+      },
+      {
+        "exercise": "Incline DB Press",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "~65% 1RM",
+        "tempo": "3-1-1-0",
+        "rest": "2 min",
+        "superset_with": null,
+        "notes": "Full stretch at bottom"
+      },
+      {
+        "exercise": "Cable Fly (low to high)",
+        "sets": 3,
+        "reps": "12-15",
+        "load": "Light",
+        "tempo": "2-1-2-0",
+        "rest": "-",
+        "superset_with": "Weighted Chest Dip",
+        "notes": ""
+      },
+      {
+        "exercise": "Weighted Chest Dip",
+        "sets": 3,
+        "reps": "8-12",
+        "load": "BW, add load when 3x12 easy",
+        "tempo": "2-0-1-0",
+        "rest": "90 sec",
+        "superset_with": "Cable Fly (low to high)",
+        "notes": "Stop at parallel"
+      },
+      {
+        "exercise": "Overhead Tricep Extension",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "Moderate",
+        "tempo": "3-1-1-0",
+        "rest": "-",
+        "superset_with": "Cable Pushdown",
+        "notes": ""
+      },
+      {
+        "exercise": "Cable Pushdown",
+        "sets": 3,
+        "reps": "12-15",
+        "load": "Moderate",
+        "tempo": "2-0-1-0",
+        "rest": "75 sec",
+        "superset_with": "Overhead Tricep Extension",
+        "notes": ""
+      },
+      {
+        "exercise": "Lateral Raise",
+        "sets": 3,
+        "reps": "15-20",
+        "load": "Light",
+        "tempo": "2-1-2-0",
+        "rest": "-",
+        "superset_with": "Rear Delt Fly (cable)",
+        "notes": ""
+      },
+      {
+        "exercise": "Rear Delt Fly (cable)",
+        "sets": 3,
+        "reps": "15",
+        "load": "Light",
+        "tempo": "2-1-2-0",
+        "rest": "60 sec",
+        "superset_with": "Lateral Raise",
+        "notes": ""
+      }
     ],
     "Tuesday - Pull Hypertrophy": [
-      { "exercise": "Lat Pulldown (neutral grip)", "sets": 3, "reps": "8-10", "load": "73-78% 1RM", "tempo": "3-0-1-0", "rest": "2.5 min", "superset_with": null, "notes": "Full stretch at top" },
-      { "exercise": "Chest-Supported DB Row", "sets": 3, "reps": "10-12", "load": "Moderate", "tempo": "2-1-2-0", "rest": "2 min", "superset_with": null, "notes": "" },
-      { "exercise": "Seated Cable Row (close grip)", "sets": 3, "reps": "10-12", "load": "Moderate", "tempo": "2-1-2-0", "rest": "90 sec", "superset_with": null, "notes": "" },
-      { "exercise": "EZ Bar Curl", "sets": 3, "reps": "10-12", "load": "Moderate", "tempo": "2-0-2-0", "rest": "-", "superset_with": "Hammer Curl", "notes": "" },
-      { "exercise": "Hammer Curl", "sets": 3, "reps": "10-12", "load": "Moderate", "tempo": "2-0-2-0", "rest": "75 sec", "superset_with": "EZ Bar Curl", "notes": "" },
-      { "exercise": "Incline DB Curl", "sets": 3, "reps": "10-12", "load": "Light", "tempo": "2-1-2-0", "rest": "-", "superset_with": "Face Pull", "notes": "" },
-      { "exercise": "Face Pull", "sets": 3, "reps": "15-20", "load": "Light", "tempo": "2-1-2-0", "rest": "60 sec", "superset_with": "Incline DB Curl", "notes": "Never skip" }
+      {
+        "exercise": "Lat Pulldown (neutral grip)",
+        "sets": 3,
+        "reps": "8-10",
+        "load": "73-78% 1RM",
+        "tempo": "3-0-1-0",
+        "rest": "2.5 min",
+        "superset_with": null,
+        "notes": "Full stretch at top"
+      },
+      {
+        "exercise": "Chest-Supported DB Row",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "Moderate",
+        "tempo": "2-1-2-0",
+        "rest": "2 min",
+        "superset_with": null,
+        "notes": ""
+      },
+      {
+        "exercise": "Seated Cable Row (close grip)",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "Moderate",
+        "tempo": "2-1-2-0",
+        "rest": "90 sec",
+        "superset_with": null,
+        "notes": ""
+      },
+      {
+        "exercise": "EZ Bar Curl",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "Moderate",
+        "tempo": "2-0-2-0",
+        "rest": "-",
+        "superset_with": "Hammer Curl",
+        "notes": ""
+      },
+      {
+        "exercise": "Hammer Curl",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "Moderate",
+        "tempo": "2-0-2-0",
+        "rest": "75 sec",
+        "superset_with": "EZ Bar Curl",
+        "notes": ""
+      },
+      {
+        "exercise": "Incline DB Curl",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "Light",
+        "tempo": "2-1-2-0",
+        "rest": "-",
+        "superset_with": "Face Pull",
+        "notes": ""
+      },
+      {
+        "exercise": "Face Pull",
+        "sets": 3,
+        "reps": "15-20",
+        "load": "Light",
+        "tempo": "2-1-2-0",
+        "rest": "60 sec",
+        "superset_with": "Incline DB Curl",
+        "notes": "Never skip"
+      }
     ],
     "Wednesday - Legs Hypertrophy": [
-      { "exercise": "Barbell Hip Thrust", "sets": 3, "reps": "10-12", "load": "Heavy", "tempo": "2-2-1-0", "rest": "2 min", "superset_with": null, "notes": "2-sec squeeze at top" },
-      { "exercise": "Romanian Deadlift", "sets": 3, "reps": "8-10", "load": "68-73% 1RM", "tempo": "3-1-1-0", "rest": "2 min", "superset_with": null, "notes": "" },
-      { "exercise": "Hack Squat / Leg Press", "sets": 3, "reps": "10-12", "load": "75-80% 1RM", "tempo": "3-1-1-0", "rest": "2 min", "superset_with": null, "notes": "" },
-      { "exercise": "Hip Adduction (machine)", "sets": 3, "reps": "15 (range 15-20)", "load": "Moderate", "tempo": "3-sec eccentric", "rest": "-", "superset_with": "Hip Abduction (machine)", "notes": "Do first in pair. Adductors set the pace; move both up together" },
-      { "exercise": "Hip Abduction (machine)", "sets": 3, "reps": "15 (range 15-20)", "load": "Moderate", "tempo": "3-sec eccentric, 2-sec hold", "rest": "60-75 sec", "superset_with": "Hip Adduction (machine)", "notes": "" },
-      { "exercise": "Leg Extension", "sets": 3, "reps": "12-15", "load": "Moderate", "tempo": "2-2-3-0", "rest": "-", "superset_with": "Leg Curl (seated)", "notes": "" },
-      { "exercise": "Leg Curl (seated)", "sets": 3, "reps": "12-15", "load": "Moderate", "tempo": "2-1-3-0", "rest": "75 sec", "superset_with": "Leg Extension", "notes": "" },
-      { "exercise": "Tibialis Raise (wall)", "sets": 3, "reps": "20-25", "load": "Bodyweight", "tempo": "2-1-2-0", "rest": "-", "superset_with": "Calf Raise (slow eccentric)", "notes": "Ankle tendon protocol" },
-      { "exercise": "Calf Raise (slow eccentric)", "sets": 3, "reps": "12", "load": "Heavy", "tempo": "2-2-6-0", "rest": "90 sec", "superset_with": "Tibialis Raise (wall)", "notes": "6-sec eccentric mandatory" }
+      {
+        "exercise": "Barbell Hip Thrust",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "Heavy",
+        "tempo": "2-2-1-0",
+        "rest": "2 min",
+        "superset_with": null,
+        "notes": "2-sec squeeze at top"
+      },
+      {
+        "exercise": "Romanian Deadlift",
+        "sets": 3,
+        "reps": "8-10",
+        "load": "68-73% 1RM",
+        "tempo": "3-1-1-0",
+        "rest": "2 min",
+        "superset_with": null,
+        "notes": ""
+      },
+      {
+        "exercise": "Hack Squat / Leg Press",
+        "sets": 3,
+        "reps": "10-12",
+        "load": "75-80% 1RM",
+        "tempo": "3-1-1-0",
+        "rest": "2 min",
+        "superset_with": null,
+        "notes": ""
+      },
+      {
+        "exercise": "Hip Adduction (machine)",
+        "sets": 3,
+        "reps": "15 (range 15-20)",
+        "load": "Moderate",
+        "tempo": "3-sec eccentric",
+        "rest": "-",
+        "superset_with": "Hip Abduction (machine)",
+        "notes": "Do first in pair. Adductors set the pace; move both up together"
+      },
+      {
+        "exercise": "Hip Abduction (machine)",
+        "sets": 3,
+        "reps": "15 (range 15-20)",
+        "load": "Moderate",
+        "tempo": "3-sec eccentric, 2-sec hold",
+        "rest": "60-75 sec",
+        "superset_with": "Hip Adduction (machine)",
+        "notes": ""
+      },
+      {
+        "exercise": "Leg Extension",
+        "sets": 3,
+        "reps": "12-15",
+        "load": "Moderate",
+        "tempo": "2-2-3-0",
+        "rest": "-",
+        "superset_with": "Leg Curl (seated)",
+        "notes": ""
+      },
+      {
+        "exercise": "Leg Curl (seated)",
+        "sets": 3,
+        "reps": "12-15",
+        "load": "Moderate",
+        "tempo": "2-1-3-0",
+        "rest": "75 sec",
+        "superset_with": "Leg Extension",
+        "notes": ""
+      },
+      {
+        "exercise": "Tibialis Raise (wall)",
+        "sets": 3,
+        "reps": "20-25",
+        "load": "Bodyweight",
+        "tempo": "2-1-2-0",
+        "rest": "-",
+        "superset_with": "Calf Raise (slow eccentric)",
+        "notes": "Ankle tendon protocol"
+      },
+      {
+        "exercise": "Calf Raise (slow eccentric)",
+        "sets": 3,
+        "reps": "12",
+        "load": "Heavy",
+        "tempo": "2-2-6-0",
+        "rest": "90 sec",
+        "superset_with": "Tibialis Raise (wall)",
+        "notes": "6-sec eccentric mandatory"
+      }
     ],
     "Thursday - Upper Strength": [
-      { "exercise": "Barbell Bench Press", "sets": 4, "reps": "5-7", "load": "78-83% 1RM", "tempo": "3-1-1-0", "rest": "-", "superset_with": "Weighted Pull-Up", "notes": "" },
-      { "exercise": "Weighted Pull-Up", "sets": 4, "reps": "5-7", "load": "Added load", "tempo": "3-0-1-0", "rest": "2 min", "superset_with": "Barbell Bench Press", "notes": "" },
-      { "exercise": "Seated DB Shoulder Press", "sets": 3, "reps": "6-8", "load": "75-80% 1RM", "tempo": "2-1-1-0", "rest": "-", "superset_with": "Barbell Row", "notes": "" },
-      { "exercise": "Barbell Row", "sets": 3, "reps": "6-8", "load": "75-80% 1RM", "tempo": "2-1-2-0", "rest": "2 min", "superset_with": "Seated DB Shoulder Press", "notes": "" },
-      { "exercise": "Close-Grip Bench Press", "sets": 3, "reps": "8-10", "load": "70-75% 1RM", "tempo": "2-0-1-0", "rest": "-", "superset_with": "Rear Delt Fly (cable)", "notes": "" },
-      { "exercise": "Rear Delt Fly (cable)", "sets": 3, "reps": "15", "load": "Light", "tempo": "2-1-2-0", "rest": "75 sec", "superset_with": "Close-Grip Bench Press", "notes": "" }
+      {
+        "exercise": "Barbell Bench Press",
+        "sets": 4,
+        "reps": "5-7",
+        "load": "78-83% 1RM",
+        "tempo": "3-1-1-0",
+        "rest": "-",
+        "superset_with": "Weighted Pull-Up",
+        "notes": ""
+      },
+      {
+        "exercise": "Weighted Pull-Up",
+        "sets": 4,
+        "reps": "5-7",
+        "load": "Added load",
+        "tempo": "3-0-1-0",
+        "rest": "2 min",
+        "superset_with": "Barbell Bench Press",
+        "notes": ""
+      },
+      {
+        "exercise": "Seated DB Shoulder Press",
+        "sets": 3,
+        "reps": "6-8",
+        "load": "75-80% 1RM",
+        "tempo": "2-1-1-0",
+        "rest": "-",
+        "superset_with": "Barbell Row",
+        "notes": ""
+      },
+      {
+        "exercise": "Barbell Row",
+        "sets": 3,
+        "reps": "6-8",
+        "load": "75-80% 1RM",
+        "tempo": "2-1-2-0",
+        "rest": "2 min",
+        "superset_with": "Seated DB Shoulder Press",
+        "notes": ""
+      },
+      {
+        "exercise": "Close-Grip Bench Press",
+        "sets": 3,
+        "reps": "8-10",
+        "load": "70-75% 1RM",
+        "tempo": "2-0-1-0",
+        "rest": "-",
+        "superset_with": "Rear Delt Fly (cable)",
+        "notes": ""
+      },
+      {
+        "exercise": "Rear Delt Fly (cable)",
+        "sets": 3,
+        "reps": "15",
+        "load": "Light",
+        "tempo": "2-1-2-0",
+        "rest": "75 sec",
+        "superset_with": "Close-Grip Bench Press",
+        "notes": ""
+      }
     ],
     "Friday - Lower Strength": [
-      { "exercise": "Back Squat", "sets": 4, "reps": "4-6", "load": "78-83% 1RM", "tempo": "3-1-1-0", "rest": "3 min", "superset_with": null, "notes": "Primary squat" },
-      { "exercise": "Conventional Deadlift", "sets": 3, "reps": "4-5", "load": "80-85% 1RM", "tempo": "2-0-1-0", "rest": "3 min", "superset_with": null, "notes": "Full hip extension lockout" },
-      { "exercise": "Barbell Hip Thrust", "sets": 3, "reps": "8-10", "load": "Heavy", "tempo": "2-2-1-0", "rest": "2 min", "superset_with": null, "notes": "Heavier than Wednesday" },
-      { "exercise": "Nordic Hamstring Curl", "sets": 3, "reps": "4-6", "load": "Bodyweight", "tempo": "5-0-1-0", "rest": "-", "superset_with": "Tibialis Raise", "notes": "" },
-      { "exercise": "Tibialis Raise", "sets": 3, "reps": "25", "load": "Bodyweight", "tempo": "2-1-2-0", "rest": "90 sec", "superset_with": "Nordic Hamstring Curl", "notes": "" },
-      { "exercise": "ISO Wall Squat", "sets": 2, "reps": "40 sec", "load": "Bodyweight", "tempo": "Hold", "rest": "75 sec", "superset_with": null, "notes": "Patellar tendon - never skip" }
-    ],
-    "Bull Riding Prep (Mon/Wed/Fri, home)": [
-      { "exercise": "Barbell Rotational Press", "sets": null, "reps": "", "load": "Bar only to start", "tempo": "", "rest": "", "superset_with": null, "notes": "" },
-      { "exercise": "Lateral Bounds", "sets": null, "reps": "", "load": "Bodyweight", "tempo": "", "rest": "", "superset_with": null, "notes": "" },
-      { "exercise": "Overhead Hold & Walk", "sets": null, "reps": "", "load": "Bar", "tempo": "", "rest": "", "superset_with": null, "notes": "" },
-      { "exercise": "Dead Hang", "sets": null, "reps": "", "load": "Bodyweight", "tempo": "", "rest": "", "superset_with": null, "notes": "" },
-      { "exercise": "Neck Work", "sets": null, "reps": "", "load": "Band or 2.5 lb max (first 4 wks)", "tempo": "", "rest": "", "superset_with": null, "notes": "Build slowly" }
-    ],
-    "Core Routine (Tue/Thu/Sat/Sun - non-bull-prep days)": [
-      { "exercise": "Ab Roller", "sets": null, "reps": "", "load": "Bodyweight", "tempo": "", "rest": "", "superset_with": null, "notes": "" },
-      { "exercise": "Dead Bug", "sets": null, "reps": "", "load": "Bodyweight", "tempo": "", "rest": "", "superset_with": null, "notes": "" },
-      { "exercise": "Side Plank", "sets": null, "reps": "", "load": "Bodyweight", "tempo": "Hold", "rest": "", "superset_with": null, "notes": "" },
-      { "exercise": "Reverse Crunch", "sets": null, "reps": "", "load": "Bodyweight", "tempo": "", "rest": "", "superset_with": null, "notes": "" }
+      {
+        "exercise": "Back Squat",
+        "sets": 4,
+        "reps": "4-6",
+        "load": "78-83% 1RM",
+        "tempo": "3-1-1-0",
+        "rest": "3 min",
+        "superset_with": null,
+        "notes": "Primary squat"
+      },
+      {
+        "exercise": "Conventional Deadlift",
+        "sets": 3,
+        "reps": "4-5",
+        "load": "80-85% 1RM",
+        "tempo": "2-0-1-0",
+        "rest": "3 min",
+        "superset_with": null,
+        "notes": "Full hip extension lockout"
+      },
+      {
+        "exercise": "Barbell Hip Thrust",
+        "sets": 3,
+        "reps": "8-10",
+        "load": "Heavy",
+        "tempo": "2-2-1-0",
+        "rest": "2 min",
+        "superset_with": null,
+        "notes": "Heavier than Wednesday"
+      },
+      {
+        "exercise": "Nordic Hamstring Curl",
+        "sets": 3,
+        "reps": "4-6",
+        "load": "Bodyweight",
+        "tempo": "5-0-1-0",
+        "rest": "-",
+        "superset_with": "Tibialis Raise",
+        "notes": ""
+      },
+      {
+        "exercise": "Tibialis Raise",
+        "sets": 3,
+        "reps": "25",
+        "load": "Bodyweight",
+        "tempo": "2-1-2-0",
+        "rest": "90 sec",
+        "superset_with": "Nordic Hamstring Curl",
+        "notes": ""
+      },
+      {
+        "exercise": "ISO Wall Squat",
+        "sets": 2,
+        "reps": "40 sec",
+        "load": "Bodyweight",
+        "tempo": "Hold",
+        "rest": "75 sec",
+        "superset_with": null,
+        "notes": "Patellar tendon - never skip"
+      }
     ]
   },
   "rules": [

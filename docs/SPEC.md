@@ -20,7 +20,7 @@ Items marked **OPEN** need an answer before or during the build.
 
 ## 2. Today screen
 
-- Today's plan from the weekly schedule: AM session, extra (bull riding prep or core), PM activity.
+- Today's plan from the weekly schedule: AM session and PM activity.
 - WHOOP recovery, HRV, resting HR, sleep hours (flag if under the 6.5 hr minimum).
 - Calories: **consumed**, **MacroFactor target**, **left = target − consumed**,
   and **estimated burned** (from WHOOP).
@@ -54,13 +54,15 @@ for strain and HR, which the dashboard matches by time.
 - Deload, guard or pain restrictions show up as already-adjusted targets with the reason.
 
 **Rest timer:**
-- Starts automatically when a set is saved, using the plan's rest for that exercise.
-  - Supersets: no rest between A1 and A2. The timer runs after A2.
-- Big countdown, plus 15 s / −15 s / skip buttons, and a sound and banner at 0.
-- Actual rest taken is recorded per set. The summary shows planned vs actual rest.
-- iPhone limits: alerts are reliable while the app is open. With the app in the background,
-  alerts need the app added to the Home Screen with notifications allowed (iOS web push).
-  Vibration isn't available to web apps on iPhone.
+- **Phase 1 (core need): shows how long you've been resting.** A large count-up clock
+  (e.g. "1:42 resting") starts automatically when a set is saved and stops when the next set is saved.
+  - The plan's rest target is shown beside it ("target 2:00"). The clock changes color when
+    the target is reached and again when you go well over it, with no alerts.
+  - Supersets: no rest between A1 and A2. The clock runs after A2.
+  - The clock keeps correct time if the phone locks or you switch apps, because it's based on timestamps.
+  - Actual rest is recorded per set. The summary shows planned vs actual rest.
+- **Later:** an optional sound/notification at the target, and **vibration**.
+  Web apps can't vibrate on iPhone, so vibration comes with the native iOS app.
 
 **Tempo cue (optional):** a per-set metronome that counts the tempo (e.g. 3-1-1-0) for exercises
 where it's mandatory, like calf raises at 2-2-6-0.
@@ -181,7 +183,6 @@ Triggers (thresholds adjustable in settings):
   - focus: strength / muscle mass / functional / cardiovascular
   - goal: lose fat / gain muscle / recomp / coast
 - Plan versions are saved, so history and progression carry over between plans.
-- **OPEN:** fill in sets and reps for the Bull Riding Prep and Core Routine (marked "verify" in the plan).
 
 ## 10. Data sources
 
@@ -214,4 +215,4 @@ Triggers (thresholds adjustable in settings):
   - **Gap:** nights away from the bed have no data. Fall back to wearing the Apple Watch to bed, or
     skip the recovery score that day.
   - **Validation:** run 2–4 weeks side by side with WHOOP before canceling.
-- Native iPhone app.
+- Native iPhone app (adds rest-timer vibration).
