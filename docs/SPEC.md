@@ -160,6 +160,16 @@ Triggers (thresholds adjustable in settings):
 ## 12. Later phases
 
 - Claude Q&A on your data.
-- Replacing WHOOP: needs overnight sleep data from another source, either wearing
-  the Apple Watch to bed or a cheap sleep tracker that writes to Apple Health.
+- Replacing WHOOP:
+  - **Overnight:** sleep duration and score, overnight HRV, resting HR and breath rate
+    from the **Sleep Number bed (SleepIQ)**.
+  - **Daytime:** strain, calories and workouts from the **Apple Watch**.
+  - **Recovery score:** our own, built from bed HRV, resting HR and sleep against a personal 30-day baseline.
+    Sleep Number reports HRV as SDNN, a different measure than WHOOP's (RMSSD), so the two numbers aren't
+    comparable directly. Scoring each against its own baseline handles that.
+  - **How bed data gets in (OPEN):** through Apple Health if the Sleep Number app writes to it.
+    Otherwise through the unofficial SleepIQ API, which works but can break without notice.
+  - **Gap:** nights away from the bed have no data. Fall back to wearing the Apple Watch to bed, or
+    skip the recovery score that day.
+  - **Validation:** run 2–4 weeks side by side with WHOOP before canceling.
 - Native iPhone app.
