@@ -165,6 +165,23 @@ One short check-in a day, under 30 seconds, mostly taps.
 - Pain: none, or body area + 0–10 (feeds the pain rule below)
 - Yes/no from yesterday: alcohol, caffeine after 2 pm, late meal (within 2 hr of bed), screens in bed
 
+**Mental health (optional, a few taps):**
+- Mood 1–5
+- Anxiety 1–5
+- Motivation to train 1–5
+- Mental focus/clarity 1–5
+- Tags (pick any): calm, happy, stressed, overwhelmed, irritable, lonely, low, energized, grateful.
+  Customizable.
+- Optional short prompts (skip anytime): "What's on your mind?" and "One good thing today."
+- Mental-health entries are kept private. They are excluded from any export or sharing unless you
+  turn that on.
+- Trends: 7- and 30-day mood/anxiety lines next to sleep, recovery, training load and calories, so
+  patterns are visible (e.g. mood after high-volume weeks or big calorie deficits).
+- Insights use the same rules as the yes/no comparisons above (e.g. "Mood averages 0.8 higher on
+  days with a morning workout").
+- If mood stays at 1–2 for about a week, the dashboard shows a gentle check-in card with support
+  options (e.g. call or text 988 in the US). It never blocks anything. **OPEN:** keep or remove.
+
 **Anytime:**
 - Labor-heavy day (yes/no). This is the program's 80% effort cap, moved here from a separate toggle.
 - Free-text note
@@ -181,6 +198,8 @@ Shown only once there are enough of each answer to compare.
   Workouts for that area show the restriction.
 - **Labor-heavy day** → the effort cap and guard adjustments for that day.
 - **High soreness or low energy** together with low recovery → shows as context on guard and deload alerts.
+- **Low mood or high anxiety** for several days alongside a large calorie deficit or high training load →
+  shown as context on guard alerts (e.g. suggest a maintenance-calorie day or an easy session).
 
 The journal also shows next to the day's recovery, sleep, calories and workouts in history.
 
