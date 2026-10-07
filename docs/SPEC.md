@@ -172,6 +172,8 @@ One short check-in a day, under 30 seconds, mostly taps.
 - Mental focus/clarity 1–5
 - Tags (pick any): calm, happy, stressed, overwhelmed, irritable, lonely, low, energized, grateful.
   Customizable.
+- **Was today productive?** Yes / somewhat / no. Asked in the evening, or editable next morning
+  for the day before. Included in trends and insights (e.g. productivity vs sleep, recovery and training days).
 - Optional short prompts (skip anytime): "What's on your mind?" and "One good thing today."
 - Mental-health entries are kept private. They are excluded from any export or sharing unless you
   turn that on.
