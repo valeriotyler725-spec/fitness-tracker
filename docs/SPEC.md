@@ -32,19 +32,57 @@ Items marked **OPEN** need an answer before or during the build.
 
 ### How lift data gets in
 
-WHOOP's public API and bulk data export do **not** include Strength Trainer sets, reps or weights.
-Candidate paths:
+WHOOP's public API and bulk data export do **not** include Strength Trainer sets, reps or weights,
+and the Strava relay was ruled out (tested 2026-10-07). **Decision: lifts are logged in the
+dashboard's own Workout Tracker (below).** WHOOP still records a plain "Weightlifting" activity
+for strain and HR, which the dashboard matches by time.
 
-Strava relay ruled out: tested 2026-10-07, and Strava does not receive the set data.
-**OPEN: pick one:**
+### Workout Tracker (replaces WHOOP Strength Trainer)
 
-1. **Screenshot import:** keep logging in WHOOP Strength Trainer. After the session, upload
-   screenshots of the summary. Free in-browser text recognition reads exercise, sets, reps and
-   weight, and you confirm or fix them in one review screen. Needs sample screenshots to build the reader.
-2. **Dashboard logger plus WHOOP activity:** log sets in the dashboard, with today's workout
-   pre-filled and the suggested weight shown. Start a plain "Weightlifting" activity on WHOOP so
-   strain and HR are still captured, and the dashboard matches it by time. No double entry,
-   and this is the long-term path when WHOOP is replaced.
+**During the workout (phone-first screen):**
+- Today's session loads from the plan: exercises in order, supersets grouped (A1/A2), with sets,
+  rep range, tempo, rest and notes ("Stop at parallel", "6-sec eccentric mandatory").
+- Each set is pre-filled with the **suggested weight** and target reps. Logging a set as prescribed
+  is one tap. If not, adjust weight or reps with +/- and save.
+- Per-set fields: weight (DB total or per arm, see equipment rules), reps, optional RIR
+  (reps in reserve, 0–4), optional pain flag (opens the pain log).
+- Warm-up sets can be logged and are excluded from progression and volume.
+- Swap exercise: e.g. bench → DB bench per the shoulder-pain note, or Hack Squat ↔ Leg Press.
+  The swap is recorded and tracked separately.
+- Add or skip an exercise. Skips are recorded (e.g. "Face Pull: never skip" warns).
+- Last time's numbers are shown beside each exercise.
+- Deload, guard or pain restrictions show up as already-adjusted targets with the reason.
+
+**Rest timer:**
+- Starts automatically when a set is saved, using the plan's rest for that exercise.
+  - Supersets: no rest between A1 and A2. The timer runs after A2.
+- Big countdown, plus 15 s / −15 s / skip buttons, and a sound and banner at 0.
+- Actual rest taken is recorded per set. The summary shows planned vs actual rest.
+- iPhone limits: alerts are reliable while the app is open. With the app in the background,
+  alerts need the app added to the Home Screen with notifications allowed (iOS web push).
+  Vibration isn't available to web apps on iPhone.
+
+**Tempo cue (optional):** a per-set metronome that counts the tempo (e.g. 3-1-1-0) for exercises
+where it's mandatory, like calf raises at 2-2-6-0.
+
+**What's tracked per workout (WHOOP Strength Trainer equivalents plus more):**
+
+| Metric | Source |
+|---|---|
+| Exercises, sets, reps, weight, RIR | Workout Tracker |
+| Volume load (sets × reps × weight), per exercise and per muscle group | Calculated |
+| Muscular load by muscle group (WHOOP-style body map) | Calculated from volume, effort (RIR) and exercise-to-muscle mapping |
+| Estimated 1RM per lift and PRs (weight, reps, e1RM, volume) | Calculated |
+| Time under tension | Calculated from tempo × reps |
+| Duration, rest planned vs actual | Workout Tracker |
+| Strain, avg/max HR, HR zones, calories | WHOOP workout matched by time; later from Apple Watch |
+
+**After the workout:**
+- Summary: PRs, volume vs last time, muscle load map, strain/HR once WHOOP syncs,
+  and the progression suggestions for next session.
+- History: per-exercise charts (weight, e1RM, volume) and a calendar of sessions.
+
+**Offline:** the tracker works without gym signal and syncs when back online.
 
 ### Progression rule (from the program, plus equipment awareness)
 
