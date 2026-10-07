@@ -148,17 +148,41 @@ Triggers (thresholds adjustable in settings):
   with a suggestion to scale the second session.
 - **Muscle overlap:** hard work on the same muscles within 48 hours gets flagged
   (e.g. Thursday Zumba before Friday squats and deadlifts).
-- **Labor-heavy day:** a toggle that caps the day's effort at 80%, per the program rules.
+- **Labor-heavy day** (from the journal): caps the day's effort at 80%, per the program rules.
 - **Heart rate:** conditioning workouts whose max HR went over 160 are flagged after the fact.
   WHOOP heart rate can't be read live.
 - Guard actions are suggestions with a reason ("recovery 28% and 31% after Wednesday legs"),
   never silent changes.
 
-## 6. Pain log
+## 6. Daily journal (simpler WHOOP Journal) and pain log
 
-- Log pain 0–10 by body area.
-- Above 4/10 → the dashboard restricts that area to isometrics until **7 pain-free days**
-  are logged.
+One short check-in a day, under 30 seconds, mostly taps.
+
+**Morning (about the night before):**
+- Energy 1–5
+- Soreness 1–5, with an optional body area
+- Stress 1–5
+- Pain: none, or body area + 0–10 (feeds the pain rule below)
+- Yes/no from yesterday: alcohol, caffeine after 2 pm, late meal (within 2 hr of bed), screens in bed
+
+**Anytime:**
+- Labor-heavy day (yes/no). This is the program's 80% effort cap, moved here from a separate toggle.
+- Free-text note
+
+**Customizable:** add, remove or rename yes/no questions and 1–5 scales in settings.
+The defaults above are **OPEN** for your edits.
+
+**Insights:** after ~30 days of entries, show how recovery, HRV and sleep differ on "yes" vs "no"
+days for each item (e.g. "Recovery averages 12 points lower after alcohol").
+Shown only once there are enough of each answer to compare.
+
+**Feeds the coaching rules:**
+- **Pain above 4/10** in an area → isometrics only for that area until **7 pain-free days** are logged.
+  Workouts for that area show the restriction.
+- **Labor-heavy day** → the effort cap and guard adjustments for that day.
+- **High soreness or low energy** together with low recovery → shows as context on guard and deload alerts.
+
+The journal also shows next to the day's recovery, sleep, calories and workouts in history.
 
 ## 7. Progress photos
 
