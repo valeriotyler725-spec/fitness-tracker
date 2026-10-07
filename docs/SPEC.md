@@ -45,11 +45,24 @@ Candidate paths:
 ### Progression rule (from the program, plus equipment awareness)
 
 - **Increase:** double progression. Hit the top of the rep range on all sets for **2 sessions in a row**,
-  then add load: **+5 lb on compounds, +2.5 lb on isolation**.
-- **Equipment steps:** the increase rounds up to the next weight the equipment can actually load.
-  Each exercise has an equipment profile (barbell, dumbbell rack, machine stack, cable,
-  bodyweight or added load). Machine and cable steps are set once per machine.
-  - If the smallest step is more than ~10% of the working load, first build reps past the
+  then add load at the **smallest step the equipment allows** (below). This replaces the
+  program's +5 / +2.5 lb, because those increments aren't available.
+- **How dumbbell weight is recorded:**
+  - **Both arms together** (e.g. incline DB press, hammer curl): logged as the **total of both dumbbells**.
+    Two 25s = 50 lb.
+  - **One arm at a time:** logged **per arm**, only when the exercise is set up as single-arm.
+- **Equipment steps** (no change plates on free weights):
+
+  | Equipment | Smallest step | Example |
+  |---|---|---|
+  | Barbell | **10 lb** total (a 5 lb plate each side) | 185 → 195 |
+  | Dumbbells, both arms (logged as total) | **10 lb** total (5 lb heavier per dumbbell) | 2×25 = 50 → 2×30 = 60 |
+  | Dumbbell, single arm (logged per arm) | **5 lb** per arm | 30 → 35 |
+  | Machine stack / cable | set once per machine (**OPEN:** default 5 lb until entered) | |
+  | Bodyweight / added load | add reps, then the smallest plate or dumbbell available | dips at 3×12 → +10 lb |
+
+  - **Big jumps:** when the step is more than ~10% of the working load, which is common on light
+    dumbbell work (lateral raises 2×15 = 30 → 40 is +33%), first build reps 2 past the
     top of the range (or add a set), then jump. The dashboard tells you to expect reps to drop
     back to the bottom of the range after the jump.
 - **Hold:** below the bottom of the range for 2 sessions → keep the weight.
@@ -71,11 +84,21 @@ Candidate paths:
 - **Stall triggered:** 3 or more lifts held or reduced in the same week recommends a deload week.
 - **Sleep:** under 6.5 hr on 2 or more nights in a row adds a caution.
 
-## 5. Two-a-day load guard
+## 5. Load / overwork guard
 
-Training days with a second hard session: Thursday (Upper Strength + Zumba) and
-Saturday (Zumba). Friday's heavy lower day also follows Thursday's Zumba.
+Always on, every day. **Walks count** toward daily load.
+Heavier exposure points: Thursday (Upper Strength + Zumba), Saturday (Zumba), and
+Friday's heavy lower day following Thursday's Zumba.
 
+Triggers (thresholds adjustable in settings):
+
+- **Heavy lift, then a recovery drop:** after a heavy session (e.g. legs, then a walk), if WHOOP
+  recovery falls for **2 days in a row** (red, or more than 15 points below the 30-day average),
+  the guard steps in. The next sessions for those muscles get reduced load or volume, and
+  extra sessions become easy.
+- **Big calorie drop:** intake more than **25% below the MacroFactor target on 2 or more days in a row**,
+  or the 3-day average down more than 20%. The guard caps intensity, drops the second session
+  to easy, and puts any planned load increases on hold until intake recovers.
 - **Recovery:** red today → the second session becomes easy (walk or mobility).
 - **Load spike:** 7-day strain more than ~30% above the 4-week average → warning,
   with a suggestion to scale the second session.
@@ -84,8 +107,8 @@ Saturday (Zumba). Friday's heavy lower day also follows Thursday's Zumba.
 - **Labor-heavy day:** a toggle that caps the day's effort at 80%, per the program rules.
 - **Heart rate:** conditioning workouts whose max HR went over 160 are flagged after the fact.
   WHOOP heart rate can't be read live.
-- **OPEN:** do walks count as a session for this guard? Proposed: no, only lifts, Zumba
-  and bull riding prep.
+- Guard actions are suggestions with a reason ("recovery 28% and 31% after Wednesday legs"),
+  never silent changes.
 
 ## 6. Pain log
 
